@@ -4,30 +4,115 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #000;
+  margin: auto 0px;
+  padding: auto 0px;
 }
+.container{
+  width: 100%;
+  margin: auto 0px;
+  padding: auto 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "lato",Arial, Helvetica, sans-serif;
+}
+.ant-card{
+  font-family: "lato",Arial, Helvetica, sans-serif;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  border: none;
+  border-radius: 0%;
+}
+.what-is-creo {
+  font-family: "lato",Arial, Helvetica, sans-serif;
+  float: left;
+}
+.what{
+  font-weight: 600;
+  font-size: 15rem;
+  width: 100%;
+  position: absolute;
+}
+.creo{
+  font-family: "lato",Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  position: absolute;
+  padding-top: 131px;
+}
+.card-2{
+  font-family: "lato",Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+.card-3{
+  font-family: "lato",Arial, Helvetica, sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+.title{
+  font-weight: 600;
+  font-size: 15rem;
+}
+.para{
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+}
+.divider{
+    height: 400px;
+    color: #000;
+    border: 0.5px #000 solid;
+}
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+#svg-stage {
+  max-width: 600px;
+  overflow: visible;
+}
+
+.ball {
+  fill: white;
+  visibility: hidden;
+}
+
+.line {
+  fill: none;
+  stroke: white;
+  stroke-width: 2px;
+}
+
+.text {
+  fill: white;
+  font-size: 15px; 
+  visibility: hidden;
 }
